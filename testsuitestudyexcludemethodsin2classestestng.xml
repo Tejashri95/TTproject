@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="testSuiteStudyToRunMultipleMethodsInMultipleClass.NewTest1">
+      <methods>
+     <include name="demo"/>
+     <exclude name="sample"/>
+      </methods>
+      </class>
+      <class name="testSuiteStudyToRunMultipleMethodsInMultipleClass.NewTest2">
+      <methods>
+       <include name="c"/>
+        <exclude name ="a"/>
+      <exclude name="b"/>
+      </methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
